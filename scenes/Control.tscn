@@ -1,0 +1,157 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="boids" type="HSlider" parent="."]
+margin_top = 13.0
+margin_right = 161.0
+margin_bottom = 39.0
+min_value = 1.0
+value = 1.0
+rounded = true
+tick_count = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="boids"]
+margin_top = -8.0
+margin_right = 50.0
+margin_bottom = 8.0
+text = " number"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="target_force" type="HSlider" parent="."]
+margin_top = 40.0
+margin_right = 160.0
+margin_bottom = 74.0
+min_value = 0.01
+max_value = 1.0
+step = 0.01
+value = 0.01
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="target_force"]
+margin_top = -1.0
+margin_right = 50.0
+margin_bottom = 15.0
+text = " target force"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cohesion_force" type="HSlider" parent="."]
+margin_top = 65.0
+margin_right = 160.0
+margin_bottom = 99.0
+min_value = 0.01
+max_value = 1.0
+step = 0.01
+value = 0.01
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="cohesion_force"]
+margin_top = -2.0
+margin_right = 102.0
+margin_bottom = 14.0
+text = " cohesion  force"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="seperation_force" type="HSlider" parent="."]
+margin_top = 90.0
+margin_right = 160.0
+margin_bottom = 124.0
+min_value = 0.01
+max_value = 1.0
+step = 0.01
+value = 0.01
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="seperation_force"]
+margin_top = -2.0
+margin_right = 108.0
+margin_bottom = 12.0
+text = " seperation force"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="align_force" type="HSlider" parent="."]
+margin_top = 117.0
+margin_right = 160.0
+margin_bottom = 151.0
+min_value = 0.01
+max_value = 1.0
+step = 0.01
+value = 0.01
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="align_force"]
+margin_top = -3.0
+margin_right = 70.0
+margin_bottom = 13.0
+text = " align force"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="view_distance" type="HSlider" parent="."]
+margin_top = 143.0
+margin_right = 160.0
+margin_bottom = 177.0
+min_value = 1.0
+step = 0.1
+value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="view_distance"]
+margin_top = -2.0
+margin_right = 91.0
+margin_bottom = 14.0
+text = " view distance"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="avoid_distance" type="HSlider" parent="."]
+margin_top = 170.0
+margin_right = 160.0
+margin_bottom = 204.0
+min_value = 0.1
+max_value = 50.0
+step = 0.1
+value = 0.1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="avoid_distance"]
+margin_top = -3.0
+margin_right = 96.0
+margin_bottom = 13.0
+text = " avoid distance"
+__meta__ = {
+"_edit_use_anchors_": false
+}
